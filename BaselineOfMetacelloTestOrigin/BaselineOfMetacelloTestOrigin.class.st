@@ -12,7 +12,10 @@ Class {
 BaselineOfMetacelloTestOrigin >> baseline: spec [
 
 	<baseline>
-	spec for: #common do: [ spec postLoadDoIt: #postload:package: ]
+	spec for: #common do: [
+		spec
+			postLoadDoIt: #postload:package:;
+			package: 'Toto' ]
 ]
 
 { #category : 'actions' }
